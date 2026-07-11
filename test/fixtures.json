@@ -1,0 +1,2075 @@
+[
+ {
+  "start": "1998-06-22",
+  "end": "2004-07-31",
+  "convention": "30E/360",
+  "yearFraction": 6.105555555555555
+ },
+ {
+  "start": "2008-08-06",
+  "end": "2026-04-29",
+  "convention": "30E/360",
+  "yearFraction": 17.730555555555554
+ },
+ {
+  "start": "1996-02-03",
+  "end": "2017-04-05",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 21.167370312149114
+ },
+ {
+  "start": "1996-09-23",
+  "end": "1999-07-01",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 2.772222222222222
+ },
+ {
+  "start": "2009-10-26",
+  "end": "2017-10-30",
+  "convention": "30/360",
+  "yearFraction": 8.011111111111111
+ },
+ {
+  "start": "2018-06-14",
+  "end": "2025-12-23",
+  "convention": "ACT/360",
+  "yearFraction": 7.636111111111111
+ },
+ {
+  "start": "2011-08-22",
+  "end": "2021-12-20",
+  "convention": "30/360",
+  "yearFraction": 10.327777777777778
+ },
+ {
+  "start": "2019-05-01",
+  "end": "2028-11-17",
+  "convention": "30E/360",
+  "yearFraction": 9.544444444444444
+ },
+ {
+  "start": "1995-06-04",
+  "end": "2018-07-15",
+  "convention": "ACT/360",
+  "yearFraction": 23.45
+ },
+ {
+  "start": "2027-10-11",
+  "end": "2029-09-03",
+  "convention": "30E/360",
+  "yearFraction": 1.8944444444444444
+ },
+ {
+  "start": "2007-11-29",
+  "end": "2032-07-11",
+  "convention": "30E/360",
+  "yearFraction": 24.616666666666667
+ },
+ {
+  "start": "1998-08-28",
+  "end": "2015-01-07",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 16.358333333333334
+ },
+ {
+  "start": "1996-07-30",
+  "end": "2000-06-01",
+  "convention": "ACT/365F",
+  "yearFraction": 3.841095890410959
+ },
+ {
+  "start": "2000-01-08",
+  "end": "2027-08-23",
+  "convention": "30E/360",
+  "yearFraction": 27.625
+ },
+ {
+  "start": "1995-11-26",
+  "end": "2014-09-08",
+  "convention": "ACT/360",
+  "yearFraction": 19.058333333333334
+ },
+ {
+  "start": "1996-09-18",
+  "end": "1997-03-19",
+  "convention": "ACT/365F",
+  "yearFraction": 0.4986301369863014
+ },
+ {
+  "start": "2005-03-04",
+  "end": "2010-11-02",
+  "convention": "30E/360",
+  "yearFraction": 5.661111111111111
+ },
+ {
+  "start": "2008-11-21",
+  "end": "2015-12-29",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 7.103802679841305
+ },
+ {
+  "start": "2002-07-07",
+  "end": "2017-02-01",
+  "convention": "ACT/365F",
+  "yearFraction": 14.583561643835617
+ },
+ {
+  "start": "2031-06-13",
+  "end": "2031-07-13",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 0.0821917808219178
+ },
+ {
+  "start": "2008-06-04",
+  "end": "2020-07-02",
+  "convention": "ACT/365F",
+  "yearFraction": 12.084931506849315
+ },
+ {
+  "start": "1998-09-11",
+  "end": "2020-10-28",
+  "convention": "30/360",
+  "yearFraction": 22.130555555555556
+ },
+ {
+  "start": "2008-01-07",
+  "end": "2021-05-02",
+  "convention": "30E/360",
+  "yearFraction": 13.319444444444445
+ },
+ {
+  "start": "2007-12-09",
+  "end": "2009-10-12",
+  "convention": "30/360",
+  "yearFraction": 1.8416666666666666
+ },
+ {
+  "start": "2005-12-11",
+  "end": "2024-09-26",
+  "convention": "ACT/360",
+  "yearFraction": 19.066666666666666
+ },
+ {
+  "start": "2007-12-24",
+  "end": "2032-09-27",
+  "convention": "ACT/360",
+  "yearFraction": 25.122222222222224
+ },
+ {
+  "start": "1998-02-14",
+  "end": "2026-04-01",
+  "convention": "ACT/360",
+  "yearFraction": 28.53611111111111
+ },
+ {
+  "start": "1995-05-30",
+  "end": "2031-06-16",
+  "convention": "30E/360",
+  "yearFraction": 36.044444444444444
+ },
+ {
+  "start": "2002-04-23",
+  "end": "2014-12-26",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 12.676712328767122
+ },
+ {
+  "start": "1999-01-29",
+  "end": "2033-09-23",
+  "convention": "30/360",
+  "yearFraction": 34.65
+ },
+ {
+  "start": "2000-12-07",
+  "end": "2024-09-07",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 23.75
+ },
+ {
+  "start": "1997-03-01",
+  "end": "2019-10-05",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 22.594444444444445
+ },
+ {
+  "start": "2001-07-12",
+  "end": "2012-04-02",
+  "convention": "30/360",
+  "yearFraction": 10.722222222222221
+ },
+ {
+  "start": "2003-09-06",
+  "end": "2021-06-10",
+  "convention": "30/360",
+  "yearFraction": 17.761111111111113
+ },
+ {
+  "start": "1995-04-21",
+  "end": "2016-12-19",
+  "convention": "ACT/365F",
+  "yearFraction": 21.67945205479452
+ },
+ {
+  "start": "2018-07-12",
+  "end": "2025-11-22",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 7.361111111111111
+ },
+ {
+  "start": "2011-03-05",
+  "end": "2017-01-21",
+  "convention": "ACT/360",
+  "yearFraction": 5.969444444444444
+ },
+ {
+  "start": "2006-03-14",
+  "end": "2033-09-09",
+  "convention": "ACT/365F",
+  "yearFraction": 27.50958904109589
+ },
+ {
+  "start": "2009-06-25",
+  "end": "2018-07-23",
+  "convention": "ACT/365F",
+  "yearFraction": 9.082191780821917
+ },
+ {
+  "start": "2005-06-17",
+  "end": "2017-10-26",
+  "convention": "30E/360",
+  "yearFraction": 12.358333333333333
+ },
+ {
+  "start": "2011-11-16",
+  "end": "2012-03-15",
+  "convention": "ACT/365F",
+  "yearFraction": 0.3287671232876712
+ },
+ {
+  "start": "2011-08-19",
+  "end": "2027-06-06",
+  "convention": "30E/360",
+  "yearFraction": 15.797222222222222
+ },
+ {
+  "start": "2032-02-25",
+  "end": "2033-02-15",
+  "convention": "ACT/365F",
+  "yearFraction": 0.9753424657534246
+ },
+ {
+  "start": "2000-10-08",
+  "end": "2022-02-06",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 21.33087057414477
+ },
+ {
+  "start": "2010-09-28",
+  "end": "2031-11-12",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 21.123287671232877
+ },
+ {
+  "start": "2001-03-06",
+  "end": "2011-08-15",
+  "convention": "ACT/365F",
+  "yearFraction": 10.449315068493151
+ },
+ {
+  "start": "1995-01-18",
+  "end": "2006-02-11",
+  "convention": "ACT/360",
+  "yearFraction": 11.227777777777778
+ },
+ {
+  "start": "1996-03-24",
+  "end": "1999-10-31",
+  "convention": "30/360",
+  "yearFraction": 3.602777777777778
+ },
+ {
+  "start": "2021-08-07",
+  "end": "2033-05-04",
+  "convention": "30E/360",
+  "yearFraction": 11.741666666666667
+ },
+ {
+  "start": "2030-01-05",
+  "end": "2033-05-01",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 3.3222222222222224
+ },
+ {
+  "start": "2013-09-12",
+  "end": "2029-11-19",
+  "convention": "30E/360",
+  "yearFraction": 16.18611111111111
+ },
+ {
+  "start": "2012-12-21",
+  "end": "2015-06-21",
+  "convention": "30/360",
+  "yearFraction": 2.5
+ },
+ {
+  "start": "2009-04-14",
+  "end": "2014-06-21",
+  "convention": "30E/360",
+  "yearFraction": 5.186111111111111
+ },
+ {
+  "start": "2008-08-02",
+  "end": "2011-05-26",
+  "convention": "30/360",
+  "yearFraction": 2.816666666666667
+ },
+ {
+  "start": "2017-07-12",
+  "end": "2026-12-29",
+  "convention": "30E/360",
+  "yearFraction": 9.463888888888889
+ },
+ {
+  "start": "2000-10-27",
+  "end": "2029-12-28",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 29.16936896474287
+ },
+ {
+  "start": "2006-10-03",
+  "end": "2021-03-20",
+  "convention": "ACT/360",
+  "yearFraction": 14.672222222222222
+ },
+ {
+  "start": "2011-06-10",
+  "end": "2025-07-09",
+  "convention": "ACT/360",
+  "yearFraction": 14.286111111111111
+ },
+ {
+  "start": "1999-03-06",
+  "end": "2031-10-31",
+  "convention": "30/360",
+  "yearFraction": 32.65277777777778
+ },
+ {
+  "start": "2022-04-03",
+  "end": "2034-02-05",
+  "convention": "30E/360",
+  "yearFraction": 11.838888888888889
+ },
+ {
+  "start": "1995-03-03",
+  "end": "2034-08-23",
+  "convention": "30/360",
+  "yearFraction": 39.47222222222222
+ },
+ {
+  "start": "2021-10-27",
+  "end": "2034-07-14",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 12.712328767123287
+ },
+ {
+  "start": "2003-11-22",
+  "end": "2025-04-09",
+  "convention": "ACT/365F",
+  "yearFraction": 21.394520547945206
+ },
+ {
+  "start": "2009-06-08",
+  "end": "2029-05-11",
+  "convention": "ACT/360",
+  "yearFraction": 20.21388888888889
+ },
+ {
+  "start": "2000-02-18",
+  "end": "2004-11-23",
+  "convention": "ACT/360",
+  "yearFraction": 4.833333333333333
+ },
+ {
+  "start": "2003-07-19",
+  "end": "2009-04-10",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 5.726027397260274
+ },
+ {
+  "start": "2001-12-31",
+  "end": "2005-04-26",
+  "convention": "ACT/365F",
+  "yearFraction": 3.3205479452054796
+ },
+ {
+  "start": "1997-08-07",
+  "end": "2014-11-02",
+  "convention": "ACT/360",
+  "yearFraction": 17.488888888888887
+ },
+ {
+  "start": "1996-03-02",
+  "end": "2025-07-13",
+  "convention": "30/360",
+  "yearFraction": 29.363888888888887
+ },
+ {
+  "start": "2015-11-03",
+  "end": "2032-03-12",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 16.358333333333334
+ },
+ {
+  "start": "1995-09-21",
+  "end": "2019-08-20",
+  "convention": "30/360",
+  "yearFraction": 23.913888888888888
+ },
+ {
+  "start": "2000-10-16",
+  "end": "2010-08-08",
+  "convention": "30/360",
+  "yearFraction": 9.811111111111112
+ },
+ {
+  "start": "2027-08-13",
+  "end": "2034-08-12",
+  "convention": "30/360",
+  "yearFraction": 6.997222222222222
+ },
+ {
+  "start": "2004-12-21",
+  "end": "2017-07-23",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 12.586219028370387
+ },
+ {
+  "start": "2010-03-06",
+  "end": "2033-10-17",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 23.616438356164384
+ },
+ {
+  "start": "1998-05-07",
+  "end": "2008-09-06",
+  "convention": "ACT/365F",
+  "yearFraction": 10.342465753424657
+ },
+ {
+  "start": "2003-02-22",
+  "end": "2005-05-28",
+  "convention": "ACT/365F",
+  "yearFraction": 2.263013698630137
+ },
+ {
+  "start": "1997-12-15",
+  "end": "2030-09-30",
+  "convention": "30/360",
+  "yearFraction": 32.791666666666664
+ },
+ {
+  "start": "1995-11-14",
+  "end": "2003-04-15",
+  "convention": "30/360",
+  "yearFraction": 7.419444444444444
+ },
+ {
+  "start": "2006-01-30",
+  "end": "2009-04-14",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 3.2055555555555557
+ },
+ {
+  "start": "2023-12-25",
+  "end": "2027-01-27",
+  "convention": "ACT/365F",
+  "yearFraction": 3.0931506849315067
+ },
+ {
+  "start": "2003-04-28",
+  "end": "2010-08-23",
+  "convention": "ACT/365F",
+  "yearFraction": 7.326027397260274
+ },
+ {
+  "start": "1995-05-30",
+  "end": "2022-11-04",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 27.432876712328767
+ },
+ {
+  "start": "1995-07-07",
+  "end": "2011-05-19",
+  "convention": "30/360",
+  "yearFraction": 15.866666666666667
+ },
+ {
+  "start": "2017-11-23",
+  "end": "2020-03-08",
+  "convention": "30/360",
+  "yearFraction": 2.2916666666666665
+ },
+ {
+  "start": "2002-12-24",
+  "end": "2028-09-24",
+  "convention": "30/360",
+  "yearFraction": 25.75
+ },
+ {
+  "start": "1998-11-30",
+  "end": "2025-07-29",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 26.660273972602738
+ },
+ {
+  "start": "2005-02-25",
+  "end": "2023-08-28",
+  "convention": "ACT/360",
+  "yearFraction": 18.772222222222222
+ },
+ {
+  "start": "2016-03-20",
+  "end": "2020-06-17",
+  "convention": "30/360",
+  "yearFraction": 4.241666666666666
+ },
+ {
+  "start": "2023-07-20",
+  "end": "2023-11-02",
+  "convention": "ACT/365F",
+  "yearFraction": 0.2876712328767123
+ },
+ {
+  "start": "2000-10-03",
+  "end": "2034-10-04",
+  "convention": "ACT/360",
+  "yearFraction": 34.49722222222222
+ },
+ {
+  "start": "2007-05-02",
+  "end": "2026-08-03",
+  "convention": "30E/360",
+  "yearFraction": 19.252777777777776
+ },
+ {
+  "start": "2003-11-06",
+  "end": "2033-12-26",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 30.13888888888889
+ },
+ {
+  "start": "1998-12-15",
+  "end": "2024-06-27",
+  "convention": "ACT/360",
+  "yearFraction": 25.905555555555555
+ },
+ {
+  "start": "2004-11-01",
+  "end": "2028-12-11",
+  "convention": "30/360",
+  "yearFraction": 24.11111111111111
+ },
+ {
+  "start": "2009-06-11",
+  "end": "2014-12-30",
+  "convention": "ACT/365F",
+  "yearFraction": 5.556164383561644
+ },
+ {
+  "start": "2031-05-20",
+  "end": "2034-04-06",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 2.8777777777777778
+ },
+ {
+  "start": "2001-11-30",
+  "end": "2024-02-24",
+  "convention": "ACT/365F",
+  "yearFraction": 22.24931506849315
+ },
+ {
+  "start": "2004-08-08",
+  "end": "2016-04-06",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 11.661111111111111
+ },
+ {
+  "start": "2000-07-11",
+  "end": "2018-12-31",
+  "convention": "30/360",
+  "yearFraction": 18.47222222222222
+ },
+ {
+  "start": "2011-08-11",
+  "end": "2018-10-29",
+  "convention": "ACT/360",
+  "yearFraction": 7.322222222222222
+ },
+ {
+  "start": "2001-03-14",
+  "end": "2006-06-13",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 5.247222222222222
+ },
+ {
+  "start": "2008-04-12",
+  "end": "2026-04-03",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 17.973366269930384
+ },
+ {
+  "start": "1995-02-08",
+  "end": "2005-08-29",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 10.553424657534247
+ },
+ {
+  "start": "2001-11-11",
+  "end": "2015-01-26",
+  "convention": "30E/360",
+  "yearFraction": 13.208333333333334
+ },
+ {
+  "start": "1997-03-10",
+  "end": "2030-04-10",
+  "convention": "30E/360",
+  "yearFraction": 33.083333333333336
+ },
+ {
+  "start": "2005-12-05",
+  "end": "2013-11-19",
+  "convention": "30/360",
+  "yearFraction": 7.955555555555556
+ },
+ {
+  "start": "1995-03-21",
+  "end": "2022-05-06",
+  "convention": "ACT/365F",
+  "yearFraction": 27.145205479452056
+ },
+ {
+  "start": "2020-06-17",
+  "end": "2025-09-05",
+  "convention": "30/360",
+  "yearFraction": 5.216666666666667
+ },
+ {
+  "start": "2000-12-12",
+  "end": "2007-08-18",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 6.683333333333334
+ },
+ {
+  "start": "2011-11-08",
+  "end": "2018-07-03",
+  "convention": "ACT/360",
+  "yearFraction": 6.747222222222222
+ },
+ {
+  "start": "2011-04-26",
+  "end": "2016-03-10",
+  "convention": "ACT/365F",
+  "yearFraction": 4.876712328767123
+ },
+ {
+  "start": "1995-10-25",
+  "end": "2020-04-11",
+  "convention": "ACT/360",
+  "yearFraction": 24.819444444444443
+ },
+ {
+  "start": "2006-06-23",
+  "end": "2012-08-24",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 6.170836140429673
+ },
+ {
+  "start": "2027-04-02",
+  "end": "2033-07-31",
+  "convention": "30E/360",
+  "yearFraction": 6.3277777777777775
+ },
+ {
+  "start": "2010-07-19",
+  "end": "2010-09-06",
+  "convention": "ACT/365F",
+  "yearFraction": 0.13424657534246576
+ },
+ {
+  "start": "1999-09-13",
+  "end": "2034-12-20",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 35.269444444444446
+ },
+ {
+  "start": "2012-01-07",
+  "end": "2021-12-27",
+  "convention": "30E/360",
+  "yearFraction": 9.972222222222221
+ },
+ {
+  "start": "2025-09-18",
+  "end": "2030-04-19",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 4.583561643835616
+ },
+ {
+  "start": "1999-03-19",
+  "end": "2023-03-31",
+  "convention": "ACT/365F",
+  "yearFraction": 24.04931506849315
+ },
+ {
+  "start": "1996-04-15",
+  "end": "2024-11-16",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 28.586111111111112
+ },
+ {
+  "start": "2020-10-13",
+  "end": "2021-01-07",
+  "convention": "30/360",
+  "yearFraction": 0.23333333333333334
+ },
+ {
+  "start": "2019-07-10",
+  "end": "2033-03-03",
+  "convention": "ACT/365F",
+  "yearFraction": 13.657534246575343
+ },
+ {
+  "start": "2007-05-11",
+  "end": "2007-07-21",
+  "convention": "30/360",
+  "yearFraction": 0.19444444444444445
+ },
+ {
+  "start": "2005-04-29",
+  "end": "2022-06-20",
+  "convention": "ACT/360",
+  "yearFraction": 17.391666666666666
+ },
+ {
+  "start": "2007-09-06",
+  "end": "2013-10-15",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 6.1068493150684935
+ },
+ {
+  "start": "1995-10-10",
+  "end": "2023-01-25",
+  "convention": "30/360",
+  "yearFraction": 27.291666666666668
+ },
+ {
+  "start": "2012-11-12",
+  "end": "2025-07-25",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 12.702777777777778
+ },
+ {
+  "start": "1997-10-13",
+  "end": "2026-03-16",
+  "convention": "30/360",
+  "yearFraction": 28.425
+ },
+ {
+  "start": "2019-10-01",
+  "end": "2022-09-06",
+  "convention": "30/360",
+  "yearFraction": 2.9305555555555554
+ },
+ {
+  "start": "2010-08-18",
+  "end": "2013-09-09",
+  "convention": "30E/360",
+  "yearFraction": 3.058333333333333
+ },
+ {
+  "start": "2025-04-10",
+  "end": "2025-11-15",
+  "convention": "30E/360",
+  "yearFraction": 0.5972222222222222
+ },
+ {
+  "start": "2000-06-16",
+  "end": "2023-02-16",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 22.66974324425481
+ },
+ {
+  "start": "1998-06-06",
+  "end": "2034-11-09",
+  "convention": "ACT/365F",
+  "yearFraction": 36.45205479452055
+ },
+ {
+  "start": "2002-04-15",
+  "end": "2026-10-04",
+  "convention": "ACT/360",
+  "yearFraction": 24.82777777777778
+ },
+ {
+  "start": "2029-05-08",
+  "end": "2030-06-14",
+  "convention": "30/360",
+  "yearFraction": 1.1
+ },
+ {
+  "start": "2002-03-21",
+  "end": "2027-05-28",
+  "convention": "ACT/365F",
+  "yearFraction": 25.202739726027396
+ },
+ {
+  "start": "2022-11-24",
+  "end": "2026-09-08",
+  "convention": "30E/360",
+  "yearFraction": 3.7888888888888888
+ },
+ {
+  "start": "2000-10-21",
+  "end": "2002-12-16",
+  "convention": "ACT/360",
+  "yearFraction": 2.183333333333333
+ },
+ {
+  "start": "2015-01-16",
+  "end": "2019-08-24",
+  "convention": "ACT/365F",
+  "yearFraction": 4.605479452054794
+ },
+ {
+  "start": "2003-03-16",
+  "end": "2012-04-10",
+  "convention": "30E/360",
+  "yearFraction": 9.066666666666666
+ },
+ {
+  "start": "2007-10-25",
+  "end": "2023-07-08",
+  "convention": "30E/360",
+  "yearFraction": 15.702777777777778
+ },
+ {
+  "start": "2014-10-04",
+  "end": "2021-09-06",
+  "convention": "ACT/365F",
+  "yearFraction": 6.928767123287671
+ },
+ {
+  "start": "1996-01-30",
+  "end": "2033-10-12",
+  "convention": "30/360",
+  "yearFraction": 37.7
+ },
+ {
+  "start": "2031-04-22",
+  "end": "2032-06-19",
+  "convention": "30E/360",
+  "yearFraction": 1.1583333333333334
+ },
+ {
+  "start": "2027-10-25",
+  "end": "2034-09-18",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 6.897222222222222
+ },
+ {
+  "start": "2000-05-20",
+  "end": "2009-12-25",
+  "convention": "ACT/365F",
+  "yearFraction": 9.605479452054794
+ },
+ {
+  "start": "2028-07-02",
+  "end": "2033-04-11",
+  "convention": "30E/360",
+  "yearFraction": 4.775
+ },
+ {
+  "start": "2010-07-01",
+  "end": "2016-09-23",
+  "convention": "30E/360",
+  "yearFraction": 6.227777777777778
+ },
+ {
+  "start": "2014-03-31",
+  "end": "2019-11-25",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 5.654794520547945
+ },
+ {
+  "start": "1999-02-19",
+  "end": "2011-01-31",
+  "convention": "ACT/360",
+  "yearFraction": 12.122222222222222
+ },
+ {
+  "start": "1999-08-05",
+  "end": "2027-02-01",
+  "convention": "30E/360",
+  "yearFraction": 27.488888888888887
+ },
+ {
+  "start": "2001-05-01",
+  "end": "2015-10-26",
+  "convention": "30E/360",
+  "yearFraction": 14.48611111111111
+ },
+ {
+  "start": "2025-01-24",
+  "end": "2028-12-29",
+  "convention": "ACT/360",
+  "yearFraction": 3.986111111111111
+ },
+ {
+  "start": "2000-06-16",
+  "end": "2020-02-21",
+  "convention": "30E/360",
+  "yearFraction": 19.680555555555557
+ },
+ {
+  "start": "2007-09-22",
+  "end": "2015-10-29",
+  "convention": "30E/360",
+  "yearFraction": 8.102777777777778
+ },
+ {
+  "start": "2005-10-02",
+  "end": "2010-05-22",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 4.638888888888889
+ },
+ {
+  "start": "1996-10-28",
+  "end": "2028-01-19",
+  "convention": "30E/360",
+  "yearFraction": 31.225
+ },
+ {
+  "start": "2013-04-10",
+  "end": "2020-03-10",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 6.916666666666667
+ },
+ {
+  "start": "1998-10-15",
+  "end": "2018-03-22",
+  "convention": "ACT/360",
+  "yearFraction": 19.716666666666665
+ },
+ {
+  "start": "1998-08-19",
+  "end": "2026-04-27",
+  "convention": "ACT/360",
+  "yearFraction": 28.091666666666665
+ },
+ {
+  "start": "2003-07-10",
+  "end": "2029-02-02",
+  "convention": "30/360",
+  "yearFraction": 25.56111111111111
+ },
+ {
+  "start": "1996-05-09",
+  "end": "2007-05-04",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 10.98611111111111
+ },
+ {
+  "start": "2013-04-30",
+  "end": "2030-10-29",
+  "convention": "30/360",
+  "yearFraction": 17.497222222222224
+ },
+ {
+  "start": "2014-02-15",
+  "end": "2029-05-08",
+  "convention": "ACT/365F",
+  "yearFraction": 15.235616438356164
+ },
+ {
+  "start": "1997-11-15",
+  "end": "2004-08-24",
+  "convention": "ACT/360",
+  "yearFraction": 6.872222222222222
+ },
+ {
+  "start": "1997-01-29",
+  "end": "2024-10-18",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 27.718369638445992
+ },
+ {
+  "start": "2012-02-26",
+  "end": "2015-03-02",
+  "convention": "ACT/360",
+  "yearFraction": 3.0555555555555554
+ },
+ {
+  "start": "2032-05-10",
+  "end": "2034-03-03",
+  "convention": "30/360",
+  "yearFraction": 1.8138888888888889
+ },
+ {
+  "start": "2004-01-16",
+  "end": "2027-03-20",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 23.177777777777777
+ },
+ {
+  "start": "2002-05-06",
+  "end": "2029-03-03",
+  "convention": "ACT/365F",
+  "yearFraction": 26.843835616438355
+ },
+ {
+  "start": "2009-07-29",
+  "end": "2015-06-14",
+  "convention": "30E/360",
+  "yearFraction": 5.875
+ },
+ {
+  "start": "2016-11-05",
+  "end": "2032-04-11",
+  "convention": "ACT/360",
+  "yearFraction": 15.655555555555555
+ },
+ {
+  "start": "2026-07-14",
+  "end": "2032-10-21",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 6.269444444444445
+ },
+ {
+  "start": "2011-02-23",
+  "end": "2029-09-15",
+  "convention": "30/360",
+  "yearFraction": 18.56111111111111
+ },
+ {
+  "start": "1996-11-01",
+  "end": "2008-05-09",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 11.519125683060109
+ },
+ {
+  "start": "2006-08-15",
+  "end": "2033-01-22",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 26.438356164383563
+ },
+ {
+  "start": "1997-09-15",
+  "end": "2017-06-04",
+  "convention": "30E/360",
+  "yearFraction": 19.719444444444445
+ },
+ {
+  "start": "1999-02-21",
+  "end": "2012-12-02",
+  "convention": "30E/360",
+  "yearFraction": 13.780555555555555
+ },
+ {
+  "start": "2004-10-06",
+  "end": "2023-02-17",
+  "convention": "30/360",
+  "yearFraction": 18.363888888888887
+ },
+ {
+  "start": "1997-03-11",
+  "end": "2008-07-29",
+  "convention": "ACT/360",
+  "yearFraction": 11.55
+ },
+ {
+  "start": "1998-06-19",
+  "end": "2010-06-10",
+  "convention": "30/360",
+  "yearFraction": 11.975
+ },
+ {
+  "start": "1997-12-03",
+  "end": "2025-01-29",
+  "convention": "30/360",
+  "yearFraction": 27.155555555555555
+ },
+ {
+  "start": "2003-07-09",
+  "end": "2003-07-15",
+  "convention": "ACT/360",
+  "yearFraction": 0.016666666666666666
+ },
+ {
+  "start": "1998-01-22",
+  "end": "1998-06-08",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 0.37777777777777777
+ },
+ {
+  "start": "1998-12-19",
+  "end": "2022-02-22",
+  "convention": "30E/360",
+  "yearFraction": 23.175
+ },
+ {
+  "start": "2003-09-12",
+  "end": "2012-05-01",
+  "convention": "30E/360",
+  "yearFraction": 8.636111111111111
+ },
+ {
+  "start": "2017-09-23",
+  "end": "2023-06-18",
+  "convention": "ACT/360",
+  "yearFraction": 5.816666666666666
+ },
+ {
+  "start": "2004-04-19",
+  "end": "2011-08-02",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 7.285747436185344
+ },
+ {
+  "start": "1995-07-18",
+  "end": "2033-10-25",
+  "convention": "ACT/360",
+  "yearFraction": 38.830555555555556
+ },
+ {
+  "start": "2008-10-05",
+  "end": "2026-10-30",
+  "convention": "30/360",
+  "yearFraction": 18.069444444444443
+ },
+ {
+  "start": "2008-06-16",
+  "end": "2014-05-29",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 5.9527777777777775
+ },
+ {
+  "start": "2003-09-29",
+  "end": "2004-03-26",
+  "convention": "ACT/360",
+  "yearFraction": 0.49722222222222223
+ },
+ {
+  "start": "2013-10-04",
+  "end": "2014-08-13",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 0.8575342465753425
+ },
+ {
+  "start": "2003-12-25",
+  "end": "2014-11-28",
+  "convention": "ACT/365F",
+  "yearFraction": 10.934246575342465
+ },
+ {
+  "start": "2026-05-10",
+  "end": "2027-11-20",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 1.5315068493150685
+ },
+ {
+  "start": "2008-10-27",
+  "end": "2024-07-13",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 15.710382513661202
+ },
+ {
+  "start": "2022-07-07",
+  "end": "2024-11-01",
+  "convention": "30/360",
+  "yearFraction": 2.316666666666667
+ },
+ {
+  "start": "1998-03-27",
+  "end": "2001-08-03",
+  "convention": "30E/360",
+  "yearFraction": 3.35
+ },
+ {
+  "start": "2018-03-31",
+  "end": "2032-05-01",
+  "convention": "ACT/365F",
+  "yearFraction": 14.095890410958905
+ },
+ {
+  "start": "1996-09-22",
+  "end": "2030-03-31",
+  "convention": "30E/360",
+  "yearFraction": 33.522222222222226
+ },
+ {
+  "start": "2004-09-21",
+  "end": "2021-10-21",
+  "convention": "30E/360",
+  "yearFraction": 17.083333333333332
+ },
+ {
+  "start": "2008-10-23",
+  "end": "2029-09-13",
+  "convention": "ACT/365F",
+  "yearFraction": 20.904109589041095
+ },
+ {
+  "start": "1995-06-26",
+  "end": "2031-04-12",
+  "convention": "ACT/365F",
+  "yearFraction": 35.81917808219178
+ },
+ {
+  "start": "1998-02-20",
+  "end": "1998-11-21",
+  "convention": "ACT/365F",
+  "yearFraction": 0.7506849315068493
+ },
+ {
+  "start": "2005-03-29",
+  "end": "2032-12-07",
+  "convention": "30E/360",
+  "yearFraction": 27.68888888888889
+ },
+ {
+  "start": "1998-10-09",
+  "end": "2001-02-17",
+  "convention": "30/360",
+  "yearFraction": 2.3555555555555556
+ },
+ {
+  "start": "2014-10-25",
+  "end": "2023-05-03",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 8.522222222222222
+ },
+ {
+  "start": "2027-04-17",
+  "end": "2029-01-30",
+  "convention": "30/360",
+  "yearFraction": 1.7861111111111112
+ },
+ {
+  "start": "2011-08-03",
+  "end": "2016-01-06",
+  "convention": "ACT/365F",
+  "yearFraction": 4.4301369863013695
+ },
+ {
+  "start": "2030-08-12",
+  "end": "2034-11-27",
+  "convention": "30E/360",
+  "yearFraction": 4.291666666666667
+ },
+ {
+  "start": "2005-09-23",
+  "end": "2012-08-22",
+  "convention": "30/360",
+  "yearFraction": 6.913888888888889
+ },
+ {
+  "start": "2010-02-23",
+  "end": "2022-09-17",
+  "convention": "ACT/360",
+  "yearFraction": 12.747222222222222
+ },
+ {
+  "start": "2014-03-27",
+  "end": "2019-01-24",
+  "convention": "ACT/360",
+  "yearFraction": 4.9
+ },
+ {
+  "start": "2021-09-28",
+  "end": "2032-08-23",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 10.902777777777779
+ },
+ {
+  "start": "2021-03-17",
+  "end": "2029-10-08",
+  "convention": "ACT/360",
+  "yearFraction": 8.686111111111112
+ },
+ {
+  "start": "2005-02-12",
+  "end": "2019-08-23",
+  "convention": "ACT/365F",
+  "yearFraction": 14.534246575342467
+ },
+ {
+  "start": "2010-01-15",
+  "end": "2029-08-13",
+  "convention": "30/360",
+  "yearFraction": 19.57777777777778
+ },
+ {
+  "start": "2015-06-20",
+  "end": "2030-06-28",
+  "convention": "30/360",
+  "yearFraction": 15.022222222222222
+ },
+ {
+  "start": "2014-06-04",
+  "end": "2030-03-08",
+  "convention": "30E/360",
+  "yearFraction": 15.761111111111111
+ },
+ {
+  "start": "2013-12-05",
+  "end": "2029-12-18",
+  "convention": "30E/360",
+  "yearFraction": 16.03611111111111
+ },
+ {
+  "start": "1996-12-16",
+  "end": "2008-10-30",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 11.871584699453551
+ },
+ {
+  "start": "1996-05-07",
+  "end": "2012-11-11",
+  "convention": "ACT/360",
+  "yearFraction": 16.755555555555556
+ },
+ {
+  "start": "1999-10-07",
+  "end": "2000-05-27",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 0.6388888888888888
+ },
+ {
+  "start": "2008-03-12",
+  "end": "2008-04-02",
+  "convention": "ACT/360",
+  "yearFraction": 0.058333333333333334
+ },
+ {
+  "start": "2012-04-26",
+  "end": "2025-01-08",
+  "convention": "30/360",
+  "yearFraction": 12.7
+ },
+ {
+  "start": "1998-02-04",
+  "end": "2018-10-10",
+  "convention": "30/360",
+  "yearFraction": 20.683333333333334
+ },
+ {
+  "start": "2016-07-24",
+  "end": "2020-01-22",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 3.497267759562842
+ },
+ {
+  "start": "2017-03-24",
+  "end": "2020-01-01",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 2.7753424657534245
+ },
+ {
+  "start": "2017-07-12",
+  "end": "2031-02-21",
+  "convention": "ACT/360",
+  "yearFraction": 13.811111111111112
+ },
+ {
+  "start": "2002-12-07",
+  "end": "2016-03-01",
+  "convention": "30/360",
+  "yearFraction": 13.233333333333333
+ },
+ {
+  "start": "2014-08-24",
+  "end": "2022-06-21",
+  "convention": "30E/360",
+  "yearFraction": 7.825
+ },
+ {
+  "start": "2007-04-04",
+  "end": "2024-09-21",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 17.46388888888889
+ },
+ {
+  "start": "2017-11-06",
+  "end": "2023-01-04",
+  "convention": "30E/360",
+  "yearFraction": 5.161111111111111
+ },
+ {
+  "start": "1997-02-26",
+  "end": "2004-09-25",
+  "convention": "ACT/360",
+  "yearFraction": 7.688888888888889
+ },
+ {
+  "start": "1995-08-15",
+  "end": "2027-12-05",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 32.30684931506849
+ },
+ {
+  "start": "2025-02-03",
+  "end": "2028-02-23",
+  "convention": "30E/360",
+  "yearFraction": 3.0555555555555554
+ },
+ {
+  "start": "2007-10-13",
+  "end": "2028-06-30",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 20.713713601317465
+ },
+ {
+  "start": "2008-05-27",
+  "end": "2034-07-20",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 26.147222222222222
+ },
+ {
+  "start": "2001-07-02",
+  "end": "2025-03-08",
+  "convention": "ACT/365F",
+  "yearFraction": 23.698630136986303
+ },
+ {
+  "start": "2006-03-15",
+  "end": "2025-11-11",
+  "convention": "30E/360",
+  "yearFraction": 19.655555555555555
+ },
+ {
+  "start": "2029-08-21",
+  "end": "2031-08-15",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 1.9835616438356163
+ },
+ {
+  "start": "2020-01-12",
+  "end": "2033-12-25",
+  "convention": "30E/360",
+  "yearFraction": 13.952777777777778
+ },
+ {
+  "start": "2013-06-16",
+  "end": "2025-02-05",
+  "convention": "ACT/365F",
+  "yearFraction": 11.64931506849315
+ },
+ {
+  "start": "2003-06-19",
+  "end": "2025-12-21",
+  "convention": "30/360",
+  "yearFraction": 22.505555555555556
+ },
+ {
+  "start": "2012-06-12",
+  "end": "2034-12-17",
+  "convention": "30E/360",
+  "yearFraction": 22.51388888888889
+ },
+ {
+  "start": "1997-08-31",
+  "end": "2026-08-01",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 28.919444444444444
+ },
+ {
+  "start": "2018-02-13",
+  "end": "2018-07-16",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 0.425
+ },
+ {
+  "start": "2012-01-13",
+  "end": "2020-01-05",
+  "convention": "ACT/360",
+  "yearFraction": 8.094444444444445
+ },
+ {
+  "start": "2008-02-11",
+  "end": "2022-02-20",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 14.025
+ },
+ {
+  "start": "2007-12-11",
+  "end": "2015-08-12",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 7.668493150684932
+ },
+ {
+  "start": "2017-02-09",
+  "end": "2017-12-29",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 0.8849315068493151
+ },
+ {
+  "start": "1995-08-17",
+  "end": "2028-01-07",
+  "convention": "30E/360",
+  "yearFraction": 32.388888888888886
+ },
+ {
+  "start": "2020-12-27",
+  "end": "2024-02-22",
+  "convention": "30/360",
+  "yearFraction": 3.1527777777777777
+ },
+ {
+  "start": "2017-06-28",
+  "end": "2020-12-03",
+  "convention": "ACT/365F",
+  "yearFraction": 3.4356164383561643
+ },
+ {
+  "start": "2027-08-01",
+  "end": "2031-11-20",
+  "convention": "ACT/360",
+  "yearFraction": 4.366666666666666
+ },
+ {
+  "start": "2005-11-24",
+  "end": "2009-08-02",
+  "convention": "ACT/360",
+  "yearFraction": 3.7416666666666667
+ },
+ {
+  "start": "1999-01-22",
+  "end": "2025-09-20",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 26.66111111111111
+ },
+ {
+  "start": "1997-09-22",
+  "end": "2020-03-05",
+  "convention": "ACT/360",
+  "yearFraction": 22.77777777777778
+ },
+ {
+  "start": "2006-06-08",
+  "end": "2030-11-11",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 24.427397260273974
+ },
+ {
+  "start": "2011-01-19",
+  "end": "2025-02-26",
+  "convention": "ACT/365F",
+  "yearFraction": 14.115068493150686
+ },
+ {
+  "start": "2010-02-02",
+  "end": "2016-01-18",
+  "convention": "30E/360",
+  "yearFraction": 5.961111111111111
+ },
+ {
+  "start": "2012-08-18",
+  "end": "2032-07-01",
+  "convention": "30E/360",
+  "yearFraction": 19.869444444444444
+ },
+ {
+  "start": "2011-07-31",
+  "end": "2033-06-18",
+  "convention": "30E/360",
+  "yearFraction": 21.883333333333333
+ },
+ {
+  "start": "2026-01-21",
+  "end": "2031-02-18",
+  "convention": "ACT/365F",
+  "yearFraction": 5.079452054794521
+ },
+ {
+  "start": "2001-12-07",
+  "end": "2007-07-04",
+  "convention": "30/360",
+  "yearFraction": 5.575
+ },
+ {
+  "start": "2015-07-05",
+  "end": "2017-03-05",
+  "convention": "30/360",
+  "yearFraction": 1.6666666666666667
+ },
+ {
+  "start": "2025-05-05",
+  "end": "2029-05-05",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 4.0
+ },
+ {
+  "start": "2025-02-04",
+  "end": "2029-07-19",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 4.452054794520548
+ },
+ {
+  "start": "2001-06-27",
+  "end": "2018-08-04",
+  "convention": "ACT/360",
+  "yearFraction": 17.352777777777778
+ },
+ {
+  "start": "2006-05-05",
+  "end": "2019-04-28",
+  "convention": "30E/360",
+  "yearFraction": 12.980555555555556
+ },
+ {
+  "start": "2015-07-01",
+  "end": "2026-08-28",
+  "convention": "30E/360",
+  "yearFraction": 11.158333333333333
+ },
+ {
+  "start": "2006-02-02",
+  "end": "2009-09-07",
+  "convention": "30/360",
+  "yearFraction": 3.5972222222222223
+ },
+ {
+  "start": "2007-01-24",
+  "end": "2011-02-02",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 4.024657534246575
+ },
+ {
+  "start": "1996-07-26",
+  "end": "2027-12-20",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 31.40154951717943
+ },
+ {
+  "start": "2009-07-12",
+  "end": "2026-05-03",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 16.80821917808219
+ },
+ {
+  "start": "2013-10-21",
+  "end": "2023-04-05",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 9.454794520547946
+ },
+ {
+  "start": "2025-10-15",
+  "end": "2033-02-18",
+  "convention": "30E/360",
+  "yearFraction": 7.341666666666667
+ },
+ {
+  "start": "1999-10-30",
+  "end": "2024-02-14",
+  "convention": "30E/360",
+  "yearFraction": 24.288888888888888
+ },
+ {
+  "start": "2013-07-21",
+  "end": "2032-09-11",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 19.143304139531402
+ },
+ {
+  "start": "2004-10-13",
+  "end": "2019-04-06",
+  "convention": "30E/360",
+  "yearFraction": 14.480555555555556
+ },
+ {
+  "start": "1997-08-16",
+  "end": "2008-07-23",
+  "convention": "30E/360",
+  "yearFraction": 10.936111111111112
+ },
+ {
+  "start": "1996-08-27",
+  "end": "2002-08-04",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 5.936035631409537
+ },
+ {
+  "start": "2014-02-23",
+  "end": "2016-04-04",
+  "convention": "ACT/360",
+  "yearFraction": 2.1416666666666666
+ },
+ {
+  "start": "1997-08-29",
+  "end": "2022-09-05",
+  "convention": "ACT/360",
+  "yearFraction": 25.383333333333333
+ },
+ {
+  "start": "2010-01-22",
+  "end": "2016-05-18",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 6.319514933752526
+ },
+ {
+  "start": "2007-08-04",
+  "end": "2025-01-30",
+  "convention": "ACT/365F",
+  "yearFraction": 17.504109589041096
+ },
+ {
+  "start": "2014-11-26",
+  "end": "2027-11-18",
+  "convention": "30E/360",
+  "yearFraction": 12.977777777777778
+ },
+ {
+  "start": "1995-03-12",
+  "end": "2021-07-11",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 26.331506849315065
+ },
+ {
+  "start": "2004-10-16",
+  "end": "2028-01-13",
+  "convention": "30E/360",
+  "yearFraction": 23.241666666666667
+ },
+ {
+  "start": "1997-02-10",
+  "end": "2028-07-17",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 31.431394565461485
+ },
+ {
+  "start": "2018-11-07",
+  "end": "2025-02-01",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 6.233333333333333
+ },
+ {
+  "start": "2006-02-11",
+  "end": "2012-07-13",
+  "convention": "ACT/365F",
+  "yearFraction": 6.421917808219178
+ },
+ {
+  "start": "2003-07-25",
+  "end": "2016-04-05",
+  "convention": "ACT/365F",
+  "yearFraction": 12.706849315068494
+ },
+ {
+  "start": "2005-09-29",
+  "end": "2011-01-21",
+  "convention": "30E/360",
+  "yearFraction": 5.311111111111111
+ },
+ {
+  "start": "2025-05-09",
+  "end": "2029-09-20",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 4.367123287671233
+ },
+ {
+  "start": "2022-06-10",
+  "end": "2034-07-18",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 12.104109589041096
+ },
+ {
+  "start": "2009-01-29",
+  "end": "2033-07-24",
+  "convention": "ACT/365F",
+  "yearFraction": 24.4986301369863
+ },
+ {
+  "start": "1995-07-19",
+  "end": "1999-06-19",
+  "convention": "ACT/360",
+  "yearFraction": 3.975
+ },
+ {
+  "start": "2012-11-30",
+  "end": "2013-04-26",
+  "convention": "30/360",
+  "yearFraction": 0.40555555555555556
+ },
+ {
+  "start": "2007-01-31",
+  "end": "2007-02-28",
+  "convention": "30/360",
+  "yearFraction": 0.07777777777777778
+ },
+ {
+  "start": "2007-01-31",
+  "end": "2007-02-28",
+  "convention": "30E/360",
+  "yearFraction": 0.07777777777777778
+ },
+ {
+  "start": "2007-01-31",
+  "end": "2007-02-28",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 0.08333333333333333
+ },
+ {
+  "start": "2007-01-31",
+  "end": "2007-02-28",
+  "convention": "ACT/360",
+  "yearFraction": 0.07777777777777778
+ },
+ {
+  "start": "2007-01-31",
+  "end": "2007-02-28",
+  "convention": "ACT/365F",
+  "yearFraction": 0.07671232876712329
+ },
+ {
+  "start": "2007-01-31",
+  "end": "2007-02-28",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 0.07671232876712329
+ },
+ {
+  "start": "2007-02-28",
+  "end": "2007-03-31",
+  "convention": "30/360",
+  "yearFraction": 0.09166666666666666
+ },
+ {
+  "start": "2007-02-28",
+  "end": "2007-03-31",
+  "convention": "30E/360",
+  "yearFraction": 0.08888888888888889
+ },
+ {
+  "start": "2007-02-28",
+  "end": "2007-03-31",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 0.08333333333333333
+ },
+ {
+  "start": "2007-02-28",
+  "end": "2007-03-31",
+  "convention": "ACT/360",
+  "yearFraction": 0.08611111111111111
+ },
+ {
+  "start": "2007-02-28",
+  "end": "2007-03-31",
+  "convention": "ACT/365F",
+  "yearFraction": 0.08493150684931507
+ },
+ {
+  "start": "2007-02-28",
+  "end": "2007-03-31",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 0.08493150684931507
+ },
+ {
+  "start": "2008-02-29",
+  "end": "2008-03-31",
+  "convention": "30/360",
+  "yearFraction": 0.08888888888888889
+ },
+ {
+  "start": "2008-02-29",
+  "end": "2008-03-31",
+  "convention": "30E/360",
+  "yearFraction": 0.08611111111111111
+ },
+ {
+  "start": "2008-02-29",
+  "end": "2008-03-31",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 0.08333333333333333
+ },
+ {
+  "start": "2008-02-29",
+  "end": "2008-03-31",
+  "convention": "ACT/360",
+  "yearFraction": 0.08611111111111111
+ },
+ {
+  "start": "2008-02-29",
+  "end": "2008-03-31",
+  "convention": "ACT/365F",
+  "yearFraction": 0.08493150684931507
+ },
+ {
+  "start": "2008-02-29",
+  "end": "2008-03-31",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 0.08469945355191257
+ },
+ {
+  "start": "2008-01-31",
+  "end": "2008-02-29",
+  "convention": "30/360",
+  "yearFraction": 0.08055555555555556
+ },
+ {
+  "start": "2008-01-31",
+  "end": "2008-02-29",
+  "convention": "30E/360",
+  "yearFraction": 0.08055555555555556
+ },
+ {
+  "start": "2008-01-31",
+  "end": "2008-02-29",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 0.08333333333333333
+ },
+ {
+  "start": "2008-01-31",
+  "end": "2008-02-29",
+  "convention": "ACT/360",
+  "yearFraction": 0.08055555555555556
+ },
+ {
+  "start": "2008-01-31",
+  "end": "2008-02-29",
+  "convention": "ACT/365F",
+  "yearFraction": 0.07945205479452055
+ },
+ {
+  "start": "2008-01-31",
+  "end": "2008-02-29",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 0.07923497267759563
+ },
+ {
+  "start": "2011-12-31",
+  "end": "2012-12-31",
+  "convention": "30/360",
+  "yearFraction": 1.0
+ },
+ {
+  "start": "2011-12-31",
+  "end": "2012-12-31",
+  "convention": "30E/360",
+  "yearFraction": 1.0
+ },
+ {
+  "start": "2011-12-31",
+  "end": "2012-12-31",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 1.0
+ },
+ {
+  "start": "2011-12-31",
+  "end": "2012-12-31",
+  "convention": "ACT/360",
+  "yearFraction": 1.0166666666666666
+ },
+ {
+  "start": "2011-12-31",
+  "end": "2012-12-31",
+  "convention": "ACT/365F",
+  "yearFraction": 1.0027397260273974
+ },
+ {
+  "start": "2011-12-31",
+  "end": "2012-12-31",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 1.0000074855902388
+ },
+ {
+  "start": "2004-02-29",
+  "end": "2005-02-28",
+  "convention": "30/360",
+  "yearFraction": 0.9972222222222222
+ },
+ {
+  "start": "2004-02-29",
+  "end": "2005-02-28",
+  "convention": "30E/360",
+  "yearFraction": 0.9972222222222222
+ },
+ {
+  "start": "2004-02-29",
+  "end": "2005-02-28",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 1.0
+ },
+ {
+  "start": "2004-02-29",
+  "end": "2005-02-28",
+  "convention": "ACT/360",
+  "yearFraction": 1.0138888888888888
+ },
+ {
+  "start": "2004-02-29",
+  "end": "2005-02-28",
+  "convention": "ACT/365F",
+  "yearFraction": 1.0
+ },
+ {
+  "start": "2004-02-29",
+  "end": "2005-02-28",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 0.9977019237966914
+ },
+ {
+  "start": "2000-02-29",
+  "end": "2000-03-01",
+  "convention": "30/360",
+  "yearFraction": 0.005555555555555556
+ },
+ {
+  "start": "2000-02-29",
+  "end": "2000-03-01",
+  "convention": "30E/360",
+  "yearFraction": 0.005555555555555556
+ },
+ {
+  "start": "2000-02-29",
+  "end": "2000-03-01",
+  "convention": "30E/360-ISDA",
+  "yearFraction": 0.002777777777777778
+ },
+ {
+  "start": "2000-02-29",
+  "end": "2000-03-01",
+  "convention": "ACT/360",
+  "yearFraction": 0.002777777777777778
+ },
+ {
+  "start": "2000-02-29",
+  "end": "2000-03-01",
+  "convention": "ACT/365F",
+  "yearFraction": 0.0027397260273972603
+ },
+ {
+  "start": "2000-02-29",
+  "end": "2000-03-01",
+  "convention": "ACT/ACT-ISDA",
+  "yearFraction": 0.00273224043715847
+ },
+ {
+  "start": "2011-08-31",
+  "end": "2012-02-29",
+  "convention": "30E/360-ISDA",
+  "terminationDate": "2012-02-29",
+  "yearFraction": 0.49722222222222223
+ },
+ {
+  "start": "2011-08-31",
+  "end": "2012-02-29",
+  "convention": "30E/360-ISDA",
+  "terminationDate": "2015-02-28",
+  "yearFraction": 0.5
+ },
+ {
+  "start": "2012-02-29",
+  "end": "2013-02-28",
+  "convention": "30E/360-ISDA",
+  "terminationDate": "2013-02-28",
+  "yearFraction": 0.9944444444444445
+ }
+]
