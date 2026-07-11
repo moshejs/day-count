@@ -1,9 +1,9 @@
-# day-count
+# day-count-conventions
 
 ISDA day-count conventions for JavaScript/TypeScript — **30/360**, **30E/360**, **30E/360-ISDA**, **ACT/360**, **ACT/365F**, **ACT/ACT-ISDA**, **ACT/ACT-ICMA**. Zero dependencies.
 
 ```
-npm install day-count
+npm install day-count-conventions
 ```
 
 ## Why
