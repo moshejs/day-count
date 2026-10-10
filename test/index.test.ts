@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { CONVENTIONS, dayCount, yearFraction } from "../src/index.js";
-import fixtures from "./fixtures.json";
+import { QUANTLIB_VERSION, brazilHolidays, bus252, icma, pairs } from "./fixtures.js";
 
 describe("known published examples", () => {
   it("ACT/ACT-ISDA — ISDA EMU memo example (2003-11-01 → 2004-05-01)", () => {
@@ -100,16 +100,111 @@ describe("input handling", () => {
   });
 
   it("exports the convention list", () => {
-    expect(CONVENTIONS).toHaveLength(7);
+    expect(CONVENTIONS).toHaveLength(10);
+  });
+
+  it("ACT/ACT-ICMA refuses accruals outside the coupon period (was silently wrong)", () => {
+    // A full year against a semiannual period used to return 365/368 ≈ 0.9918.
+    expect(() =>
+      yearFraction("2026-05-15", "2027-05-15", "ACT/ACT-ICMA", {
+        periodEnd: "2026-11-15",
+        frequency: 2,
+      }),
+    ).toThrow(/within the coupon period/);
+    expect(() =>
+      yearFraction("2026-05-14", "2026-07-15", "ACT/ACT-ICMA", {
+        periodStart: "2026-05-15",
+        periodEnd: "2026-11-15",
+        frequency: 2,
+      }),
+    ).toThrow(RangeError);
+    // Short first coupon: accrue from issue against the notional period.
+    expect(
+      yearFraction("2026-06-01", "2026-11-15", "ACT/ACT-ICMA", {
+        periodStart: "2026-05-15",
+        periodEnd: "2026-11-15",
+        frequency: 2,
+      }),
+    ).toBe(167 / 368);
+  });
+
+  it("BUS/252 requires a holiday calendar", () => {
+    expect(() => yearFraction("2026-01-01", "2026-02-01", "BUS/252")).toThrow(RangeError);
   });
 });
 
-describe("cross-check against independent Python reference", () => {
-  it(`matches all ${fixtures.length} generated fixtures`, () => {
-    for (const f of fixtures) {
-      const opts = "terminationDate" in f ? { terminationDate: f.terminationDate as string } : {};
-      const got = yearFraction(f.start, f.end, f.convention as never, opts);
-      expect(got, `${f.convention} ${f.start} → ${f.end}`).toBeCloseTo(f.yearFraction, 12);
+describe("30U/360, ACT/ACT-AFB, BUS/252", () => {
+  it("30U/360 applies the February month-end rule that 30/360 Bond Basis does not", () => {
+    expect(dayCount("2007-02-28", "2007-03-31", "30/360")).toBe(33);
+    expect(dayCount("2007-02-28", "2007-03-31", "30U/360")).toBe(30); // D1 Feb-end → 30, then D2 31 → 30
+    expect(dayCount("2007-02-28", "2008-02-29", "30U/360")).toBe(360); // both Feb-ends
+    expect(dayCount("2007-01-31", "2007-02-28", "30U/360")).toBe(28);
+  });
+
+  it("ACT/ACT-AFB — ISDA 1998 memo examples", () => {
+    // 1994-02-10 → 1997-06-30: 3 whole years back from the end + 140/365
+    expect(yearFraction("1994-02-10", "1997-06-30", "ACT/ACT-AFB")).toBeCloseTo(3 + 140 / 365, 15);
+    // 1999-02-01 → 1999-07-01: 150/365 (no 29 Feb)
+    expect(yearFraction("1999-02-01", "1999-07-01", "ACT/ACT-AFB")).toBeCloseTo(150 / 365, 15);
+    // 2003-11-01 → 2004-05-01: stub contains 29 Feb 2004 → 182/366
+    expect(yearFraction("2003-11-01", "2004-05-01", "ACT/ACT-AFB")).toBeCloseTo(182 / 366, 15);
+  });
+
+  it("BUS/252 counts business days start-inclusive, end-exclusive", () => {
+    const holidays = ["2026-02-16", "2026-02-17"]; // Carnival Monday/Tuesday
+    // Fri 2026-02-13 → Wed 2026-02-18: only Fri 13 counts
+    expect(dayCount("2026-02-13", "2026-02-18", "BUS/252", { holidays })).toBe(1);
+    expect(dayCount("2026-02-18", "2026-02-13", "BUS/252", { holidays })).toBe(-1);
+    expect(yearFraction("2026-02-13", "2026-02-18", "BUS/252", { holidays: (d) => holidays.includes(d) })).toBe(
+      1 / 252,
+    );
+  });
+});
+
+describe(`cross-check against QuantLib ${QUANTLIB_VERSION}`, () => {
+  const convs = [
+    "30/360",
+    "30E/360",
+    "30E/360-ISDA",
+    "30U/360",
+    "ACT/360",
+    "ACT/365F",
+    "ACT/ACT-ISDA",
+    "ACT/ACT-AFB",
+  ] as const;
+
+  for (const conv of convs) {
+    it(`${conv} matches ${pairs.length} QuantLib date pairs`, () => {
+      for (const p of pairs) {
+        const [dc, yf] = p[conv] as [number, number];
+        const msg = `${conv} ${p.start} → ${p.end}`;
+        expect(dayCount(p.start, p.end, conv), msg).toBe(dc);
+        expect(yearFraction(p.start, p.end, conv), msg).toBeCloseTo(yf, 14);
+      }
+    });
+  }
+
+  it("30E/360-ISDA with the end date as termination date matches QuantLib", () => {
+    for (const p of pairs) {
+      const [dc, yf] = p["30E/360-ISDA@termination"] as [number, number];
+      const opts = { terminationDate: p.end };
+      expect(dayCount(p.start, p.end, "30E/360-ISDA", opts), `${p.start} → ${p.end}`).toBe(dc);
+      expect(yearFraction(p.start, p.end, "30E/360-ISDA", opts)).toBeCloseTo(yf, 14);
+    }
+  });
+
+  it(`ACT/ACT-ICMA matches ${icma.length} QuantLib (ISMA) coupon-period accruals`, () => {
+    for (const f of icma) {
+      const got = yearFraction(f.start, f.end, "ACT/ACT-ICMA", f);
+      expect(got, `${f.start} → ${f.end} in ${f.periodStart} → ${f.periodEnd}`).toBeCloseTo(f.yearFraction, 14);
+    }
+  });
+
+  it(`BUS/252 matches ${bus252.length} QuantLib Brazil-calendar intervals`, () => {
+    const holidays = new Set(brazilHolidays);
+    for (const f of bus252) {
+      expect(dayCount(f.start, f.end, "BUS/252", { holidays }), `${f.start} → ${f.end}`).toBe(f.dayCount);
+      expect(yearFraction(f.start, f.end, "BUS/252", { holidays })).toBeCloseTo(f.yearFraction, 14);
     }
   });
 });
