@@ -1,125 +1,122 @@
 #!/usr/bin/env python3
-"""Independent reference implementation of ISDA 2006 day-count conventions.
+"""Generate test/fixtures.ts from QuantLib, an independent reference.
 
-Generates test/fixtures.json used by the vitest suite to cross-check the
-TypeScript implementation. Written separately from the TS code, directly from
-the ISDA 2006 definitions (§4.16), as a guard against transcription bugs.
+Usage (from the repo root):
+    python3 -m venv .venv && .venv/bin/pip install QuantLib
+    .venv/bin/python test/generate-fixtures.py
+
+Mapping to QuantLib day counters:
+    30/360        Thirty360(BondBasis)
+    30E/360       Thirty360(European)
+    30E/360-ISDA  Thirty360(ISDA, terminationDate)
+    30U/360       Thirty360(USA)
+    ACT/360       Actual360()
+    ACT/365F      Actual365Fixed()
+    ACT/ACT-ISDA  ActualActual(ISDA)
+    ACT/ACT-AFB   ActualActual(AFB)
+    ACT/ACT-ICMA  ActualActual(ISMA) with the coupon period as reference period
+    BUS/252       Business252(Brazil(Settlement))
 """
 import calendar
 import json
 import random
 from datetime import date, timedelta
 
-random.seed(32)  # deterministic fixtures
+import QuantLib as ql
+
+random.seed(2026)
 
 
-def is_leap(y):
-    return calendar.isleap(y)
+def qd(d):
+    return ql.Date(d.day, d.month, d.year)
 
 
-def days_between(a, b):
-    return (b - a).days
-
-
-def last_dom(d):
-    return d.day == calendar.monthrange(d.year, d.month)[1]
-
-
-def d30360(a, b):
-    d1, d2 = a.day, b.day
-    if d1 == 31:
-        d1 = 30
-    if d2 == 31 and d1 == 30:
-        d2 = 30
-    return 360 * (b.year - a.year) + 30 * (b.month - a.month) + (d2 - d1)
-
-
-def d30e360(a, b):
-    d1 = 30 if a.day == 31 else a.day
-    d2 = 30 if b.day == 31 else b.day
-    return 360 * (b.year - a.year) + 30 * (b.month - a.month) + (d2 - d1)
-
-
-def d30e360isda(a, b, termination=None):
-    d1 = 30 if last_dom(a) else a.day
-    end_is_term = termination is not None and b == termination
-    d2 = 30 if (last_dom(b) and not (end_is_term and b.month == 2)) else b.day
-    return 360 * (b.year - a.year) + 30 * (b.month - a.month) + (d2 - d1)
-
-
-def yf(a, b, conv, termination=None):
-    if conv == "30/360":
-        return d30360(a, b) / 360
-    if conv == "30E/360":
-        return d30e360(a, b) / 360
-    if conv == "30E/360-ISDA":
-        return d30e360isda(a, b, termination) / 360
-    if conv == "ACT/360":
-        return days_between(a, b) / 360
-    if conv == "ACT/365F":
-        return days_between(a, b) / 365
-    if conv == "ACT/ACT-ISDA":
-        if a.year == b.year:
-            return days_between(a, b) / (366 if is_leap(a.year) else 365)
-        first = days_between(a, date(a.year + 1, 1, 1)) / (366 if is_leap(a.year) else 365)
-        last = days_between(date(b.year, 1, 1), b) / (366 if is_leap(b.year) else 365)
-        return first + (b.year - a.year - 1) + last
-    raise ValueError(conv)
+def iso(d):
+    return "%04d-%02d-%02d" % (d.year(), d.month(), d.dayOfMonth())
 
 
 def rand_date():
-    start = date(1995, 1, 1)
-    return start + timedelta(days=random.randrange(0, 40 * 365))
+    return date(1996, 1, 1) + timedelta(days=random.randrange(0, 40 * 365))
 
 
-fixtures = []
-convs = ["30/360", "30E/360", "30E/360-ISDA", "ACT/360", "ACT/365F", "ACT/ACT-ISDA"]
+# Month ends, 28/29/30/31 and February ends are where conventions diverge.
+EDGE = []
+for y in range(1999, 2030):
+    for m in range(1, 13):
+        last = calendar.monthrange(y, m)[1]
+        for d in sorted({1, 15, 28, 29, 30, 31, last}):
+            if d <= last:
+                EDGE.append(date(y, m, d))
+
+pairs = [tuple(sorted((rand_date(), rand_date()))) for _ in range(150)]
+pairs += [tuple(sorted((random.choice(EDGE), random.choice(EDGE)))) for _ in range(250)]
+pairs += [(a, a + timedelta(days=random.randrange(0, 800))) for a in random.sample(EDGE, 200)]
+pairs += [(rand_date(), rand_date()) for _ in range(50)]  # unordered: end may precede start
+
+COUNTERS = {
+    "30/360": ql.Thirty360(ql.Thirty360.BondBasis),
+    "30E/360": ql.Thirty360(ql.Thirty360.European),
+    "30U/360": ql.Thirty360(ql.Thirty360.USA),
+    "ACT/360": ql.Actual360(),
+    "ACT/365F": ql.Actual365Fixed(),
+    "ACT/ACT-ISDA": ql.ActualActual(ql.ActualActual.ISDA),
+    "ACT/ACT-AFB": ql.ActualActual(ql.ActualActual.AFB),
+}
+NEVER = ql.Date(1, 1, 2190)  # a termination date that is never the end date
+
+pair_rows = []
+for a, b in pairs:
+    d1, d2 = qd(a), qd(b)
+    row = {"start": a.isoformat(), "end": b.isoformat()}
+    for name, dc in COUNTERS.items():
+        row[name] = [dc.dayCount(d1, d2), dc.yearFraction(d1, d2)]
+    isda = ql.Thirty360(ql.Thirty360.ISDA, NEVER)
+    row["30E/360-ISDA"] = [isda.dayCount(d1, d2), isda.yearFraction(d1, d2)]
+    term = ql.Thirty360(ql.Thirty360.ISDA, d2)  # end date IS the termination date
+    row["30E/360-ISDA@termination"] = [term.dayCount(d1, d2), term.yearFraction(d1, d2)]
+    pair_rows.append(row)
+
+# ACT/ACT-ICMA: accruals inside one regular coupon period.
+icma = ql.ActualActual(ql.ActualActual.ISMA)
+icma_rows = []
+for _ in range(400):
+    f = random.choice([1, 2, 4, 12])
+    y, m = random.randrange(1996, 2040), random.randrange(1, 13)
+    last = calendar.monthrange(y, m)[1]
+    ps = ql.Date(min(random.choice([1, 15, 28, 29, 30, 31]), last), m, y)
+    pe = ps + ql.Period(12 // f, ql.Months)
+    if ps == ql.Date.endOfMonth(ps):
+        pe = ql.Date.endOfMonth(pe)
+    a = ps + random.randrange(0, pe - ps + 1)
+    b = a + random.randrange(0, pe - a + 1)
+    icma_rows.append({
+        "start": iso(a), "end": iso(b), "periodStart": iso(ps), "periodEnd": iso(pe),
+        "frequency": f, "yearFraction": icma.yearFraction(a, b, ps, pe),
+    })
+
+# BUS/252 with QuantLib's Brazil settlement calendar (forward intervals only;
+# QuantLib's count for end < start is not antisymmetric, this package's is).
+brazil = ql.Brazil(ql.Brazil.Settlement)
+b252 = ql.Business252(brazil)
+lo, hi = ql.Date(1, 1, 2001), ql.Date(31, 12, 2035)
+brazil_holidays = [iso(d) for d in ql.Calendar.holidayList(brazil, lo, hi, False)]
+bus_rows = []
 for _ in range(300):
-    a, b = sorted((rand_date(), rand_date()))
-    conv = random.choice(convs)
-    fixtures.append(
-        {
-            "start": a.isoformat(),
-            "end": b.isoformat(),
-            "convention": conv,
-            "yearFraction": yf(a, b, conv),
-        }
+    a = lo + random.randrange(0, hi - lo - 4000)
+    b = a + random.randrange(0, 4000)
+    bus_rows.append({"start": iso(a), "end": iso(b), "dayCount": b252.dayCount(a, b),
+                     "yearFraction": b252.yearFraction(a, b)})
+
+with open("test/fixtures.ts", "w") as out:
+    out.write(
+        "// Generated by test/generate-fixtures.py from QuantLib %s (an independent\n"
+        "// reference implementation). Do not edit by hand.\n"
+        "// pairs: [dayCount, yearFraction] per convention for each start/end pair.\n\n"
+        % ql.__version__
     )
-
-# Edge-heavy pairs: month ends, Feb 28/29, 31sts
-edges = [
-    ("2007-01-31", "2007-02-28"),
-    ("2007-02-28", "2007-03-31"),
-    ("2008-02-29", "2008-03-31"),
-    ("2008-01-31", "2008-02-29"),
-    ("2011-12-31", "2012-12-31"),
-    ("2004-02-29", "2005-02-28"),
-    ("2000-02-29", "2000-03-01"),
-]
-for s, e in edges:
-    a, b = date.fromisoformat(s), date.fromisoformat(e)
-    for conv in convs:
-        fixtures.append(
-            {"start": s, "end": e, "convention": conv, "yearFraction": yf(a, b, conv)}
-        )
-
-# 30E/360-ISDA termination-date cases (end on last day of Feb)
-for s, e, term in [
-    ("2011-08-31", "2012-02-29", "2012-02-29"),
-    ("2011-08-31", "2012-02-29", "2015-02-28"),
-    ("2012-02-29", "2013-02-28", "2013-02-28"),
-]:
-    a, b, t = date.fromisoformat(s), date.fromisoformat(e), date.fromisoformat(term)
-    fixtures.append(
-        {
-            "start": s,
-            "end": e,
-            "convention": "30E/360-ISDA",
-            "terminationDate": term,
-            "yearFraction": yf(a, b, "30E/360-ISDA", t),
-        }
-    )
-
-with open("test/fixtures.json", "w") as f:
-    json.dump(fixtures, f, indent=1)
-print(f"wrote {len(fixtures)} fixtures")
+    out.write("export const QUANTLIB_VERSION = %s;\n\n" % json.dumps(ql.__version__))
+    out.write("export const pairs: Record<string, any>[] = %s;\n\n" % json.dumps(pair_rows))
+    out.write("export const icma = %s;\n\n" % json.dumps(icma_rows))
+    out.write("export const brazilHolidays: string[] = %s;\n\n" % json.dumps(brazil_holidays))
+    out.write("export const bus252 = %s;\n" % json.dumps(bus_rows))
+print("pairs %d, icma %d, bus252 %d" % (len(pair_rows), len(icma_rows), len(bus_rows)))
