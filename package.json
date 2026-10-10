@@ -1,6 +1,6 @@
 {
   "name": "day-count-conventions",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "ISDA day-count conventions — 30/360, 30E/360, 30E/360-ISDA, 30U/360, ACT/360, ACT/365F, ACT/ACT-ISDA, ACT/ACT-ICMA, ACT/ACT-AFB, BUS/252. Zero dependencies, cross-checked against QuantLib.",
   "keywords": [
     "day-count",
